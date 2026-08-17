@@ -1,0 +1,1 @@
+- Linda Alzahrani, I want to become more confident with AI infrastructure
