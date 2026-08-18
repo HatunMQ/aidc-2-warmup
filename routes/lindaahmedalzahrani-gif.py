@@ -8,5 +8,5 @@ def handle():
     return {
         "name": "Linda Alzahrani",
         "team": "Team 2",
-        "wants": "developing my AI skills",
+        "wants": "I want to develop my AI skills",
     }
