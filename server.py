@@ -20,7 +20,7 @@ def load_routes():
 
 class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        routes = load_routes()
+        routes = ROUTES
         if self.path == "/":
             self.reply(200, {"endpoints": sorted(routes) + ["/"]})
         elif self.path in routes:
@@ -38,6 +38,8 @@ class Handler(BaseHTTPRequestHandler):
 
     def log_message(self, fmt, *args):
         print("  %s" % (fmt % args))
+
+ROUTES = load_routes()
 
 if __name__ == "__main__":
     print("listening on 0.0.0.0:8000")
